@@ -1,0 +1,278 @@
+/* main css start */
+:root{
+    --primary_font_family:;
+    --secondary_font_color: #ffffff;
+    --hover_color:#fbaa33;
+    --secondary_heading_color:#2d3e50;
+    
+    
+}
+*{
+    padding:0;
+    margin:0;
+    outline:0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+body{
+font-family: 'Arimo', sans-serif;
+font-size: 14px;
+line-height: 24px;
+font-weight: 400;
+color:#444444;
+}
+button{
+    font-size: 20px;
+    line-height: 30px;
+    color:#ffffff;
+    padding:21px;
+    background-color: #2d3e50;
+    border-radius: 10px;
+    border: none;
+    
+}
+button:hover{
+    background-color:var(--hover_color) ;
+    cursor: pointer;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.w50{
+    width: 50%;
+}
+.w33{
+    width:calc(100% / 3);
+}
+.w25{
+    width:25%;
+}
+.w100{
+    max-width: 100%;
+}
+h6{
+    font-size: 16px;
+    line-height: 30px;
+    color: ;
+}
+.round i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--hover_color);
+    font-size: x-large;
+    color:var(--secondary_font_color);
+    background-color:var(--secondary_heading_color);
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+}
+.round i:hover{
+    color:var(--secondary_heading_color);
+    background-color:var(--hover_color);
+}
+#up{
+    position:fixed;
+    bottom: 50px;
+    right: 70px;
+}
+h2,h5{
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 400;
+    color: var(--secondary_font_color)
+}
+.head{
+    text-align: center;
+    color:#666666;
+}
+h3{
+    font-size: 32px;
+    line-height: 30px;
+    font-weight: 700;
+    color:var(--secondary_heading_color)
+}
+
+/* main css end */
+/* top nav start */
+#manu{
+   
+    background-color: #2d3e50;
+}
+#manu .row{
+    justify-content: space-between; 
+}
+
+#manu .contract p{
+    line-height: 30px;
+    color: var(--secondary_font_color);
+    padding:13px 29px;
+}
+#manu p:hover{
+    color:var(--hover_color)
+}
+#manu h6{
+    color: var(--secondary_font_color);
+    padding:13px 0;
+    
+}
+#manu h6:hover{
+    color:var(--hover_color)
+}
+#manu .contract i{
+    padding: 0 5px;
+    
+}
+/* top nav end */
+/* nav css start */
+nav{
+    background-color:var(--secondary_font_color);
+    /* position: sticky;
+    top:0px; */
+}
+nav #manu2{
+    justify-content: space-between;
+    align-items: center;
+    line-height:30px ;
+}
+nav #manu2 a{
+    font-size: 16px;
+    line-height: 30px;
+    padding: 58px 22.5px;
+    color:var(--secondary_heading_color);
+    align-items: center;
+    display: inline-block;
+}
+nav #manu2 a:hover{
+    color:var(--hover_color);
+}
+/* nav css end */
+/* banner css start */
+#banner{
+    background-image: url(../image/banner.jpg);
+    max-width: 100%;
+    height: 647px;
+    padding: 136px 0;
+   position: relative;
+   background-size: cover;
+   text-align: justify;
+   background-repeat: no-repeat;
+}
+#banner #left,
+#banner #right
+{
+    position: absolute;
+    bottom: 50%;
+    right: 10px;
+}
+#banner #left{
+    left: 10px;
+}
+
+#banner div h1{
+    font-size: 52px;
+    line-height: 30px;
+    font-weight: 700;
+    padding:17px 0;
+    color: var(--secondary_font_color);
+}
+#banner div p{
+    color: var(--secondary_font_color);
+    text-align: justify;
+    padding:29px 0;
+}
+#banner div button{
+    margin:62px 10px;
+}
+#banner #banner_support div{
+   background-color: #f5f5f5;
+   padding:30px 45px;
+   text-align: center; 
+}
+#banner #banner_support{
+    justify-content: center;
+}
+#banner #banner_support h4{
+    font-size: 24px;
+    line-height: 30px;
+}
+#banner #banner_support h6,
+#banner #banner_support i{
+    color: #999999;
+    line-height: 30px;
+}
+#banner #banner_support h6:hover,
+#banner #banner_support i:hover{
+    color: var(--hover_color);
+    cursor: pointer;
+}
+/* banner css end */
+/* about css start */
+#about{
+    margin: 190px 0 100px;
+}
+#about .head p{
+    padding-top:19px;
+}
+#about .about_info{
+    padding: 70px 0;
+}
+#about .about_info_image img{
+    max-width: 100%;
+}
+#about .about_info_image .upline{
+    border-top: 2px solid var(--hover_color);
+    width:350px;
+    padding:3px 0;
+}
+#about .about_info_image .downline{
+    border-bottom: 2px solid var(--secondary_heading_color);
+    width:350px;
+    padding:3px 0;
+    text-align: right;
+}
+#about .about_info_detail{
+    padding: 41px 30px;
+}
+#about .about_info_detail .about_id_p{
+    padding:37px 0;
+}
+
+/* about css end */
+/* list css start */
+#tali {
+    background-image: url(../image/tali-image.png);
+    max-width: 100%;
+    background-size: cover;
+    text-align: center;
+    
+}
+#tali li h5{
+    padding: 0 87px;
+    font-size: 24px;
+}
+#tali li{
+    padding: 41px 0;
+}
+#tali li #line{
+    border-bottom: 2px solid var(--hover_color);
+    width: 100px;
+    text-align: center;
+    
+}
+
+
+/* list css end */
